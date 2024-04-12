@@ -1,0 +1,141 @@
+/* Global styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensure the body takes up at least the height of the viewport */
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    font-size: 24px;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+}
+
+header nav ul li {
+    margin-right: 20px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+header nav ul li.dropdown {
+    position: relative;
+}
+
+header nav ul li.dropdown ul.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #333;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+header nav ul li.dropdown:hover ul.dropdown-menu {
+    display: block;
+}
+
+header nav ul li.dropdown ul.dropdown-menu li {
+    margin-bottom: 5px;
+}
+
+header nav ul li.dropdown ul.dropdown-menu li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+section {
+    padding: 20px 0;
+}
+
+section h2 {
+    margin-bottom: 20px;
+}
+
+form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+form input[type="text"],
+form input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer-links {
+    list-style: none;
+}
+
+.footer-links li {
+    display: inline;
+    margin-right: 10px;
+}
+
+.footer-links li a {
+    color: #fff;
+    text-decoration: none;
+}

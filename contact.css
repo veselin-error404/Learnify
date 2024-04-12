@@ -1,0 +1,227 @@
+/* Reset default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+}
+
+h4 , h2{
+    text-align: center; /* Center the "Contact us" heading */
+    margin-bottom: 20px;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+header {
+    background-color: black;
+    padding: 20px 0;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    color: white;
+    font-size: 24px;
+    text-align: center;
+}
+
+header nav ul {
+    list-style: none;
+}
+
+header nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+#hero {
+    background-image: url('hero-image.jpg');
+    background-size: cover;
+    color: black;
+    padding: 100px 0;
+    text-align: center;
+}
+
+#hero h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+#hero p {
+    font-size: 18px;
+    margin-bottom: 40px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: yellow;
+    color: black;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+
+
+/* Add styles for dropdown menu */
+.dropdown {
+    position: relative;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+    max-height: 200px; /* Adjust the height as needed */
+    overflow-y: auto;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.dropdown-menu li {
+    padding: 10px;
+}
+
+.dropdown-menu li a {
+    display: block;
+    color: #333;
+    text-decoration: none;
+    white-space: nowrap; /* Ensure text remains on one line */
+}
+
+.dropdown-menu li a:hover {
+    background-color: #f4f4f4;
+}
+
+/* Hide scrollbar */
+.dropdown-menu::-webkit-scrollbar {
+    display: none;
+}
+
+.dropdown-menu {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+}
+
+/* Add space between "Contact" and "Login" buttons */
+li.space {
+    margin-left: 20px; /* Adjust as needed */
+}
+
+/* Additional styles for image row */
+.image-row {
+    display: flex;
+}
+
+.image-container {
+    position: relative;
+    flex: 1;
+    margin: 0 10px;
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+}
+
+.image-text {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 5px 10px;
+    font-size: 14px;
+}
+
+/* Styles for the contact form */
+form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+form input[type="text"],
+form input[type="email"],
+form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form textarea {
+    resize: none;
+}
+
+form button {
+    width: 100%;
+    padding: 10px;
+    background-color: yellow;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #ffd700; /* Lighter shade of yellow on hover */
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+.footer-links {
+    list-style: none;
+}
+
+.footer-links li {
+    display: inline;
+    margin-right: 10px;
+}
+
+.footer-links li a {
+    color: #fff;
+    text-decoration: none;
+}

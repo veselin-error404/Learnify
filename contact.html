@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Learnify</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li class="dropdown">
+                        <a href="#">Courses</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Coursesssssssssss 1</a></li>
+                            <li><a href="#">Course 2</a></li>
+                            <li><a href="#">Course 3</a></li>
+                            <!-- Add more courses as needed -->
+                        </ul>
+                    </li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li class="space"></li><!-- Add space between "Contact" and "Login" -->
+                    <li><a href="login.html">Login</a></li>
+                    <li><a href="register.html">Register</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <section id="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <h4>Have a question? Send us a message.</h4>
+            <form action="#" method="post">
+                <label for="name">Your UserName</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Your Email</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+
+                <button type="submit" class="btn">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Online School. All rights reserved.</p>
+            <ul class="footer-links">
+                <li><a href="#">Terms of Service</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">FAQs</a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>
